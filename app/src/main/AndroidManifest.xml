@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ankit.expensetracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExpenseTracker">
+        <activity android:name=".AboutActivity"
+            android:label="@string/about">
+
+        </activity>
+        <activity android:name=".EditTransactionActivity"
+            android:label="@string/editTransaction">
+
+        </activity>
+        <activity android:name=".TransactionDetailsActivity"
+            android:label="@string/details">
+
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddTransactionActivity"
+            android:label="@string/addTransaction">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
